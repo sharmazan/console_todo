@@ -10,10 +10,19 @@ User interface:
 4. Delete task
 0. Exit
 
-## To run:
-python3 app.py
+## Before run - create and activate a virtual env
+
+```python3 -m venv .venv
+source .venv/bin/activate```
+
+## Run app
+
+```python3 app.py```
+
+## Run tests
+
+```python3 -m pytest```
 
 ## TODO
-- Add precommit style checker
 - Add unit tests
 - Add a Repository pattern
