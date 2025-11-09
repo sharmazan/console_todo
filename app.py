@@ -20,7 +20,7 @@ def print_desc():
 
 def print_hello():
     clear()
-    print ("Hello in the Simple TODO App!")
+    print("Hello in the Simple TODO App!")
 
 
 def run():

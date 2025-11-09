@@ -19,6 +19,7 @@ def view_tasks(tasks, indexes=False):
     else:
         print("There is no tasks!")
 
+
 def complete_task(tasks):
     clear()
     view_tasks(tasks, indexes=True)
@@ -27,4 +28,3 @@ def complete_task(tasks):
         print("Select a task to complete")
         n = user_command(len(tasks))
         tasks.pop(n)
-
