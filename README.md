@@ -11,10 +11,9 @@ User interface:
 0. Exit
 
 ## To run:
-python tasks.py
+python3 app.py
 
 ## TODO
-- Save/load tasks to to tasks.txt
 - Add precommit style checker
 - Add unit tests
 - Add a Repository pattern

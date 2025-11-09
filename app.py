@@ -1,13 +1,14 @@
 from tools import clear, user_command
 from commands import add_task, view_tasks, complete_task
+from storage import load_tasks, save_tasks
 
 COMMANDS = [
     "1. Add task",
     "2. Complete task",
-    "3. Edit task",
-    "4. Delete task",
     "0. Exit",
 ]
+
+TASKS_FILE = "tasks.txt"
 
 tasks = []
 
@@ -31,6 +32,7 @@ def run():
     while True:
         n = user_command(len(COMMANDS))
         if n == 0:
+            save_tasks(TASKS_FILE, tasks)
             exit()
         elif n == 1:
             tasks.append(add_task())
@@ -41,7 +43,6 @@ def run():
 
 
 if __name__ == "__main__":
+    load_tasks(TASKS_FILE, tasks)
     while True:
         run()
-
-
